@@ -1,5 +1,7 @@
-package regular.expressions;
+package com.regular.expressions;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
@@ -28,6 +30,15 @@ public class StringRegularExpressions {
         Matcher matcher = pattern.matcher(s1);
         while(matcher.find()) {
             System.out.println(matcher.group());
+        }
+
+        List<String> s = new ArrayList<>();
+        s.add("A");
+        s.add("B");
+
+        String[] strings = s.toArray(new String[0]);
+        for(String p: strings) {
+            System.out.println(p);
         }
     }
 }
