@@ -1,1 +1,3 @@
-ABCDEFGHIJK
+Hello World.
+
+This is a path to improve Java base foundation.
