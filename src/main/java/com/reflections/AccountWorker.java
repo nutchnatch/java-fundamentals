@@ -1,5 +1,12 @@
 package com.reflections;
 
+import com.metadata.annotations.ProcessedBy;
+import com.metadata.annotations.WorkHandler;
+
+//@WorkHandler(useThreadPool = true)
+//@WorkHandler // using the default value of this annotation
+//@WorkHandler(false) // adding the "false" value to the annotation attribute
+@WorkHandler // adding the default "true" value to the annotation attribute
 public class AccountWorker implements Runnable, TaskWorker{
 
     public static void main(String[] args) {

@@ -1,5 +1,8 @@
 package com.reflections;
 
+import com.metadata.annotations.ProcessedBy;
+
+@ProcessedBy(AccountWorker.class)
 public class BankAccount {
 
     private int balance;
