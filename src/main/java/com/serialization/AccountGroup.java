@@ -10,6 +10,12 @@ import java.util.Map;
 
 public class AccountGroup implements Serializable {
 
+    public static void main(String[] args) {
+        AccountGroup group = new AccountGroup();
+        BankAccount account = new BankAccount(20, "123");
+        group.addAccount(account);
+    }
+
     Map<String, BankAccount> accountMap = new HashMap<>();
     private transient int totalBalance;
 
